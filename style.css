@@ -1,3 +1,23 @@
 body{
-    background: red;
+/*    background: red;*/
+}
+.effet{
+	color: white;
+	background: #e00d0d;
+	text-transform: uppercase;
+	padding: .3em;
+	text-align: center;
+	font-size: 3em;
+	font-family: serif;
+	font-weight: bold;
+	transform: rotate(-3deg);
+}
+
+dialog::backdrop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.7);
 }
