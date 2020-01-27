@@ -26,6 +26,18 @@ and open the template in the editor.
 			<input type="number"" id="retour">
 			<button id="close">Fermer</button>
 	    </dialog>
-            <script src="monjs.js"></script>
+            <script>
+                var dialog = document.querySlector('dialog');
+                document.querySelector('#show').onclick = function() {
+                    dialog.show();
+                };
+                document.querySelector('#close').onclick = function(){
+                        var val = document.querySelector('#retour').value;
+                        dialog.close(val);
+                };
+                document.querySelector('dialog').addEventListener('close',function(){
+                        alert(this.returnValue);
+                });
+            </script>
     </body>
 </html>
