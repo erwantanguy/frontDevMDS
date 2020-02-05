@@ -1,2 +1,7 @@
-nbproject
+/nbproject
+/node_modules
+/scss
+/js
+/gulpfile.js
+/package.json
 .DS_Store
